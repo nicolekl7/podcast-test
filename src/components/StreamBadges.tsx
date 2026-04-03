@@ -1,9 +1,8 @@
-import { Youtube, Music, Headphones, Radio } from "lucide-react";
+import { Youtube, Music, Radio } from "lucide-react";
 
 const platforms = [
-  { label: "YouTube", icon: Youtube, href: "https://open.spotify.com/show/4hqbKVCld0K2RmHPaBaehE" },
+  { label: "YouTube", icon: Youtube, href: "https://www.youtube.com/playlist?list=PLsWiFDDO_WvTSJDO0W4JZrPeHYCAvcOsE" },
   { label: "Spotify", icon: Music, href: "https://open.spotify.com/show/4hqbKVCld0K2RmHPaBaehE" },
-  { label: "Apple", icon: Headphones, href: "https://podcasts.apple.com/us/podcast/beyond-the-grid/id1810456041" },
   { label: "Amazon", icon: Radio, href: "https://www.amazon.com/Beyond-the-Grid/dp/B0GP1RFCXR" },
 ];
 

@@ -3,12 +3,12 @@ import SiteNav from "@/components/SiteNav";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
 import StreamBadges from "@/components/StreamBadges";
 import SiteFooter from "@/components/SiteFooter";
-import TranscriptSimple from "@/components/TranscriptSimple";
-import heroImage from "@/assets/tile-james.jpg";
+import TranscriptEp4 from "@/components/TranscriptEp4";
+import heroImage from "@/assets/tile-ep4.jpg";
+import heroEp6 from "@/assets/tile-james.jpg";
 import heroEp3 from "@/assets/tile-ep3.jpg";
-import heroEp4 from "@/assets/tile-ep4.jpg";
 
-const SimpleVersion = () => {
+const Episode4 = () => {
   return (
     <div className="min-h-screen bg-background">
       <SiteNav />
@@ -22,18 +22,18 @@ const SimpleVersion = () => {
             <span className="mx-2">/</span>
             <span>Podcast: Beyond the Grid</span>
             <span className="mx-2">/</span>
-            <span className="text-foreground">James Feasey, Edged Infrastructure</span>
+            <span className="text-foreground">Wes Short, Infrastructure Projects</span>
           </nav>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground leading-tight max-w-4xl">
-            The Multi-Gigawatt Reality of AI
+            A New Vision for Data Centers and Grid Interconnects
           </h1>
         </div>
         {/* Mobile-only sticky horizontal chapter nav */}
         <div className="lg:hidden border-b border-border">
           <div className="max-w-[1200px] mx-auto px-6 sm:px-10 py-2 flex gap-4 overflow-x-auto">
             <a href="#intro" className="text-xs tracking-widest uppercase text-muted-foreground hover:text-primary transition-colors whitespace-nowrap">Intro</a>
-            <a href="#main-conversation" className="text-xs tracking-widest uppercase text-muted-foreground hover:text-primary transition-colors whitespace-nowrap">Main</a>
-            <a href="#takeaways" className="text-xs tracking-widest uppercase text-muted-foreground hover:text-primary transition-colors whitespace-nowrap">Takeaways</a>
+            <a href="#main" className="text-xs tracking-widest uppercase text-muted-foreground hover:text-primary transition-colors whitespace-nowrap">Main</a>
+            <a href="#tldr" className="text-xs tracking-widest uppercase text-muted-foreground hover:text-primary transition-colors whitespace-nowrap">Takeaways</a>
           </div>
         </div>
       </div>
@@ -46,8 +46,8 @@ const SimpleVersion = () => {
             <a href="#watch-now" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Watch Now</a>
             <div className="border-t border-border my-2" />
             <a href="#intro" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Intro</a>
-            <a href="#main-conversation" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Main</a>
-            <a href="#takeaways" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Takeaways</a>
+            <a href="#main" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Main</a>
+            <a href="#tldr" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Takeaways</a>
           </nav>
 
           {/* Main content */}
@@ -56,7 +56,7 @@ const SimpleVersion = () => {
             <div className="w-full overflow-hidden rounded-sm mb-8 mt-6">
               <img
                 src={heroImage}
-                alt="Data center infrastructure with blue lighting"
+                alt="Data center infrastructure"
                 width={1920}
                 height={800}
                 className="w-full h-auto object-cover"
@@ -70,7 +70,7 @@ const SimpleVersion = () => {
 
             {/* Summary */}
             <p className="text-base sm:text-lg text-foreground/85 leading-relaxed max-w-4xl mb-16">
-              Beth Rattner sits down with James Feasey, who leads strategic sales and go-to-market strategy for AI infrastructure here at Endeavour. James discusses his fascinating career path—from his time as a British commando officer to leading go-to-market strategy at AWS—and unpacks the reality of AI scaling laws. He details the rapid transition to multi-gigawatt data center campuses, the leapfrog networking technologies poised to break the "copper ceiling," and why waterless cooling is the ultimate key to community approval.
+              Beth Rattner sits down with Wes Short, Endeavour's Senior Director of Infrastructure Projects (and resident MacGyver). Drawing from a diverse background in physics, cartography, and construction management, Wes discusses the critical importance of grid stability in the face of exponential AI power demands. He unpacks how data centers can use power electronics to act as stabilizing anchors during utility frequency swings, how AI is helping utilities map century-old infrastructure, and why the next major bottleneck for the industry won't be power, but water.
             </p>
 
             {/* Divider */}
@@ -81,7 +81,7 @@ const SimpleVersion = () => {
               <div className="aspect-video rounded-sm overflow-hidden">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/nCLnAUsmUpE?si=cgsvfTtJQgwIBqCn"
+                  src="https://www.youtube.com/embed/_KCuDF2dypk?si=2zzbf4sA3m401BMa"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -96,7 +96,7 @@ const SimpleVersion = () => {
 
             {/* Transcript */}
             <div id="transcript-area" className="pb-16">
-              <TranscriptSimple />
+              <TranscriptEp4 />
             </div>
           </div>
         </div>
@@ -108,6 +108,26 @@ const SimpleVersion = () => {
           <div className="border-t border-background/20 mb-8" />
           <h2 className="text-sm tracking-[0.2em] uppercase mb-10">More Episodes</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            {/* Episode 6 tile */}
+            <a href="/" className="group block">
+              <div className="relative aspect-[4/3] rounded-sm overflow-hidden mb-5">
+                <img src={heroEp6} alt="James Feasey" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute bottom-4 right-4 w-10 h-10 rounded-full border border-background/60 flex items-center justify-center bg-background/10 backdrop-blur-sm group-hover:bg-background/30 transition-colors">
+                  <ArrowRight className="h-4 w-4 text-background" />
+                </div>
+              </div>
+              <p className="text-xs tracking-[0.2em] uppercase text-background/60 mb-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-primary mr-2 align-middle" />
+                Beyond the Grid / James Feasey
+              </p>
+              <h3 className="text-lg font-semibold text-background group-hover:text-primary transition-colors">
+                The Multi-Gigawatt Reality of AI
+              </h3>
+              <div className="flex gap-2 mt-4">
+                <span className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center"><Music className="h-3.5 w-3.5 text-background/60" /></span>
+                <span className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center"><Youtube className="h-3.5 w-3.5 text-background/60" /></span>
+              </div>
+            </a>
             {/* Episode 3 tile */}
             <a href="/episode-3" className="group block">
               <div className="relative aspect-[4/3] rounded-sm overflow-hidden mb-5">
@@ -128,26 +148,6 @@ const SimpleVersion = () => {
                 <span className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center"><Youtube className="h-3.5 w-3.5 text-background/60" /></span>
               </div>
             </a>
-            {/* Episode 4 tile */}
-            <a href="/episode-4" className="group block">
-              <div className="relative aspect-[4/3] rounded-sm overflow-hidden mb-5">
-                <img src={heroEp4} alt="Wes Short" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute bottom-4 right-4 w-10 h-10 rounded-full border border-background/60 flex items-center justify-center bg-background/10 backdrop-blur-sm group-hover:bg-background/30 transition-colors">
-                  <ArrowRight className="h-4 w-4 text-background" />
-                </div>
-              </div>
-              <p className="text-xs tracking-[0.2em] uppercase text-background/60 mb-2">
-                <span className="inline-block w-2 h-2 rounded-full bg-primary mr-2 align-middle" />
-                Beyond the Grid / Wes Short
-              </p>
-              <h3 className="text-lg font-semibold text-background group-hover:text-primary transition-colors">
-                A New Vision for Data Centers and Grid Interconnects
-              </h3>
-              <div className="flex gap-2 mt-4">
-                <span className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center"><Music className="h-3.5 w-3.5 text-background/60" /></span>
-                <span className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center"><Youtube className="h-3.5 w-3.5 text-background/60" /></span>
-              </div>
-            </a>
           </div>
         </div>
       </div>
@@ -157,4 +157,4 @@ const SimpleVersion = () => {
   );
 };
 
-export default SimpleVersion;
+export default Episode4;

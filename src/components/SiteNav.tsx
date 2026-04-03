@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import endeavourWordmark from "@/assets/endeavour-wordmark.png";
 
 const navLinks = [
-  { label: "About", href: "#" },
-  { label: "Companies", href: "#" },
-  { label: "News", href: "#" },
-  { label: "Careers", href: "#" },
+  { label: "About", href: "https://endeavourii.com/about" },
+  { label: "Companies", href: "https://endeavourii.com/companies" },
+  { label: "News", href: "https://endeavourii.com/news" },
+  { label: "Careers", href: "https://endeavourii.com/careers" },
 ];
 
 const SiteNav = () => {
@@ -24,7 +24,7 @@ const SiteNav = () => {
       }`}
     >
       <div className="max-w-[1200px] mx-auto px-6 sm:px-10 flex items-center justify-between h-16">
-        <a href="/" className="flex items-center">
+        <a href="https://endeavourii.com" className="flex items-center">
           <img src={endeavourWordmark} alt="Endeavour" className="h-[19px] invert" />
         </a>
         <div className="hidden md:flex items-center gap-10">
@@ -38,7 +38,7 @@ const SiteNav = () => {
             </a>
           ))}
           <a
-            href="#"
+            href="https://endeavourii.com/contact"
             className="text-sm border border-foreground/40 rounded-full px-5 py-1.5 text-foreground hover:bg-foreground/10 transition-colors"
           >
             Contact
