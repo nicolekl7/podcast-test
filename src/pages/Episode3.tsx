@@ -1,11 +1,9 @@
-import { ArrowRight, Youtube, Music } from "lucide-react";
+import { ArrowRight, Youtube, Music, Headphones } from "lucide-react";
 import SiteNav from "@/components/SiteNav";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
 import StreamBadges from "@/components/StreamBadges";
-import SiteFooter from "@/components/SiteFooter";
 import TranscriptEp3 from "@/components/TranscriptEp3";
 import heroImage from "@/assets/tile-ep3.jpg";
-import heroEp4 from "@/assets/tile-ep4.jpg";
 import heroEp6 from "@/assets/tile-james.jpg";
 
 const Episode3 = () => {
@@ -70,7 +68,7 @@ const Episode3 = () => {
 
             {/* Summary */}
             <p className="text-base sm:text-lg text-foreground/85 leading-relaxed max-w-4xl mb-16">
-              Beth Rattner sits down with Jonathan Rodriguez and Evan Metzner from Endeavour's EdgedIQ team to explore the invisible nervous system powering modern infrastructure. They unpack how digital twins and high-fidelity data are transforming everything from 700-location bank retrofits to multi-gigawatt data center campuses. The conversation covers the rise of virtual power plants, the reality of keeping a "human in the loop" with AI, and why the true key to scaling technology isn't just better code—it's better human collaboration.
+              In Episode 3 of <em>Beyond the Grid</em>, host Beth Rattner is joined by Jonathan Rodriguez, Director of Technology and Operations, and Evan Metzner, Global Development Lead for Edged and Endeavour. Together they explore how EdgedIQ uses digital twins, IoT, and data intelligence to manage global infrastructure portfolios—from optimizing 700 bank branches across Canada to enabling virtual power plants that stabilize energy grids.
             </p>
 
             {/* Divider */}
@@ -95,7 +93,7 @@ const Episode3 = () => {
             <div className="border-t border-border mb-10" />
 
             {/* Transcript */}
-            <div id="transcript-area" className="pb-16">
+            <div id="transcript-area" className="pb-20">
               <TranscriptEp3 />
             </div>
           </div>
@@ -109,7 +107,7 @@ const Episode3 = () => {
           <h2 className="text-sm tracking-[0.2em] uppercase mb-10">More Episodes</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {/* Episode 6 tile */}
-            <a href="/" className="group block">
+            <a href="/simple" className="group block">
               <div className="relative aspect-[4/3] rounded-sm overflow-hidden mb-5">
                 <img src={heroEp6} alt="James Feasey" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute bottom-4 right-4 w-10 h-10 rounded-full border border-background/60 flex items-center justify-center bg-background/10 backdrop-blur-sm group-hover:bg-background/30 transition-colors">
@@ -121,38 +119,40 @@ const Episode3 = () => {
                 Beyond the Grid / James Feasey
               </p>
               <h3 className="text-lg font-semibold text-background group-hover:text-primary transition-colors">
-                The Multi-Gigawatt Reality of AI
+                The Multi-Gigawatt Reality of AI with James Feasey
               </h3>
               <div className="flex gap-2 mt-4">
                 <span className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center"><Music className="h-3.5 w-3.5 text-background/60" /></span>
+                <span className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center"><Headphones className="h-3.5 w-3.5 text-background/60" /></span>
                 <span className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center"><Youtube className="h-3.5 w-3.5 text-background/60" /></span>
               </div>
             </a>
-            {/* Episode 4 tile */}
-            <a href="/episode-4" className="group block">
-              <div className="relative aspect-[4/3] rounded-sm overflow-hidden mb-5">
-                <img src={heroEp4} alt="Wes Short" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute bottom-4 right-4 w-10 h-10 rounded-full border border-background/60 flex items-center justify-center bg-background/10 backdrop-blur-sm group-hover:bg-background/30 transition-colors">
-                  <ArrowRight className="h-4 w-4 text-background" />
-                </div>
-              </div>
+            {/* Placeholder tile */}
+            <div className="block opacity-50">
+              <div className="relative aspect-[4/3] rounded-sm overflow-hidden mb-5 bg-background/10" />
               <p className="text-xs tracking-[0.2em] uppercase text-background/60 mb-2">
-                <span className="inline-block w-2 h-2 rounded-full bg-primary mr-2 align-middle" />
-                Beyond the Grid / Wes Short
+                <span className="inline-block w-2 h-2 rounded-full bg-background/30 mr-2 align-middle" />
+                Coming Soon
               </p>
-              <h3 className="text-lg font-semibold text-background group-hover:text-primary transition-colors">
-                A New Vision for Data Centers and Grid Interconnects
+              <h3 className="text-lg font-semibold text-background">
+                Lorem Ipsum Dolor Sit Amet Consectetur
               </h3>
               <div className="flex gap-2 mt-4">
                 <span className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center"><Music className="h-3.5 w-3.5 text-background/60" /></span>
+                <span className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center"><Headphones className="h-3.5 w-3.5 text-background/60" /></span>
                 <span className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center"><Youtube className="h-3.5 w-3.5 text-background/60" /></span>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <SiteFooter />
+      {/* Footer */}
+      <footer className="border-t border-border py-8">
+        <div className="max-w-[1200px] mx-auto px-6 sm:px-10 text-center text-xs text-muted-foreground">
+          © 2026 Endeavour. All rights reserved.
+        </div>
+      </footer>
     </div>
   );
 };
