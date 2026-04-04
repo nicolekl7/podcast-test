@@ -39,19 +39,20 @@ const SimpleVersion = () => {
       </div>
 
       <div className="max-w-[1200px] mx-auto px-6 sm:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[200px_1fr] gap-6">
-          {/* Desktop sticky sidebar */}
-          <nav className="hidden lg:flex lg:flex-col gap-4 sticky top-[160px] self-start">
-            <a href="#stream-badges" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Stream</a>
-            <a href="#watch-now" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Watch Now</a>
-            <div className="border-t border-border my-2" />
-            <a href="#intro" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Intro</a>
-            <a href="#main-conversation" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Main</a>
-            <a href="#takeaways" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Takeaways</a>
-          </nav>
+        <div className="flex flex-col lg:flex-row items-start gap-6">
+          <aside className="hidden lg:block w-[200px] shrink-0 self-start sticky top-[160px]">
+            <nav className="flex flex-col gap-4">
+              <a href="#stream-badges" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Stream</a>
+              <a href="#watch-now" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Watch Now</a>
+              <div className="border-t border-border my-2" />
+              <a href="#intro" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Intro</a>
+              <a href="#main-conversation" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Main</a>
+              <a href="#takeaways" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Takeaways</a>
+            </nav>
+          </aside>
 
           {/* Main content */}
-          <div>
+          <div className="min-w-0 flex-1">
             {/* Hero Image */}
             <div className="w-full overflow-hidden rounded-sm mb-8 mt-6">
               <img
