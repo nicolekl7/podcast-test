@@ -19,9 +19,9 @@ const Episode3 = () => {
       <div className="sticky top-[56px] z-30 bg-background">
         <div className="max-w-[1200px] mx-auto px-6 sm:px-10 pb-4 pt-2">
           <nav className="text-xs tracking-widest uppercase text-muted-foreground pt-4 pb-3">
-            <span>News</span>
+            <a href="https://www.endeavourii.com/news" className="hover:text-primary transition-colors">News</a>
             <span className="mx-2">/</span>
-            <span>Podcast: Beyond the Grid</span>
+            <a href="/podcasts" className="hover:text-primary transition-colors">Podcast: Beyond the Grid</a>
             <span className="mx-2">/</span>
             <span className="text-foreground">Jonathan Rodriguez & Evan Metzner, EdgedIQ</span>
           </nav>
