@@ -1,4 +1,5 @@
 import { ArrowRight, Youtube, Music } from "lucide-react";
+import { Link } from "react-router-dom";
 import SiteNav from "@/components/SiteNav";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
 import StreamBadges from "@/components/StreamBadges";
@@ -65,7 +66,7 @@ const Episode4 = () => {
             </div>
 
             {/* Stream Badges */}
-            <div id="stream-badges" className="mb-8 scroll-mt-[156px]">
+            <div id="stream-badges" className="mb-8 scroll-mt-[366px]">
               <StreamBadges />
             </div>
 
@@ -78,7 +79,7 @@ const Episode4 = () => {
             <div className="border-t border-border mb-10" />
 
             {/* Watch Now */}
-            <div id="watch-now" className="mb-16 scroll-mt-[156px]">
+            <div id="watch-now" className="mb-16 scroll-mt-[166px]">
               <div className="aspect-video rounded-sm overflow-hidden">
                 <iframe
                   className="w-full h-full"
@@ -110,7 +111,7 @@ const Episode4 = () => {
           <h2 className="text-sm tracking-[0.2em] uppercase mb-10">More Episodes</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {/* Episode 6 tile */}
-            <a href="/" className="group block">
+            <Link to="/" className="group block">
               <div className="relative aspect-[4/3] rounded-sm overflow-hidden mb-5">
                 <img src={heroEp6} alt="James Feasey" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute bottom-4 right-4 w-10 h-10 rounded-full border border-background/60 flex items-center justify-center bg-background/10 backdrop-blur-sm group-hover:bg-background/30 transition-colors">
@@ -128,9 +129,9 @@ const Episode4 = () => {
                 <span className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center"><Music className="h-3.5 w-3.5 text-background/60" /></span>
                 <span className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center"><Youtube className="h-3.5 w-3.5 text-background/60" /></span>
               </div>
-            </a>
+            </Link>
             {/* Episode 3 tile */}
-            <a href="/episode-3" className="group block">
+            <Link to="/episode-3" className="group block">
               <div className="relative aspect-[4/3] rounded-sm overflow-hidden mb-5">
                 <img src={heroEp3} alt="Jonathan Rodriguez and Evan Metzner" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute bottom-4 right-4 w-10 h-10 rounded-full border border-background/60 flex items-center justify-center bg-background/10 backdrop-blur-sm group-hover:bg-background/30 transition-colors">
@@ -148,7 +149,7 @@ const Episode4 = () => {
                 <span className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center"><Music className="h-3.5 w-3.5 text-background/60" /></span>
                 <span className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center"><Youtube className="h-3.5 w-3.5 text-background/60" /></span>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
