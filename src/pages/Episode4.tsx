@@ -125,7 +125,7 @@ const Episode4 = () => {
               <h3 className="text-lg font-semibold text-background group-hover:text-primary transition-colors">
                 The Multi-Gigawatt Reality of AI
               </h3>
-              <div className="flex gap-2 mt-4" onClick={(e) => e.preventDefault()}>
+              <div className="flex gap-2 mt-4" onClick={(e) => e.stopPropagation()}>
                 <a href="https://open.spotify.com/show/4hqbKVCld0K2RmHPaBaehE" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center hover:border-background/60 transition-colors"><Music className="h-3.5 w-3.5 text-background/60" /></a>
                 <a href="https://www.youtube.com/playlist?list=PLsWiFDDO_WvTSJDO0W4JZrPeHYCAvcOsE" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center hover:border-background/60 transition-colors"><Youtube className="h-3.5 w-3.5 text-background/60" /></a>
               </div>
@@ -145,7 +145,7 @@ const Episode4 = () => {
               <h3 className="text-lg font-semibold text-background group-hover:text-primary transition-colors">
                 Exploring How Data is Transforming Critical Infrastructure
               </h3>
-              <div className="flex gap-2 mt-4" onClick={(e) => e.preventDefault()}>
+              <div className="flex gap-2 mt-4" onClick={(e) => e.stopPropagation()}>
                 <a href="https://open.spotify.com/show/4hqbKVCld0K2RmHPaBaehE" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center hover:border-background/60 transition-colors"><Music className="h-3.5 w-3.5 text-background/60" /></a>
                 <a href="https://www.youtube.com/playlist?list=PLsWiFDDO_WvTSJDO0W4JZrPeHYCAvcOsE" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border border-background/30 flex items-center justify-center hover:border-background/60 transition-colors"><Youtube className="h-3.5 w-3.5 text-background/60" /></a>
               </div>
