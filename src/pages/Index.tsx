@@ -13,11 +13,11 @@ const Index = () => {
 
       {/* Sticky Breadcrumb + Title */}
       <div className="sticky top-[56px] z-30 bg-background pb-4 pt-2">
-        <div className="max-w-[1200px] mx-auto px-6 sm:px-10">
+        <div id="stream-badges" className="max-w-[1200px] mx-auto px-6 sm:px-10 scroll-mt-10">
           <nav className="text-xs tracking-widest uppercase text-muted-foreground pt-4 pb-3">
-            <span>News</span>
+            <a href="https://www.endeavourii.com/news" className="hover:text-primary transition-colors">News</a>
             <span className="mx-2">/</span>
-            <span>Podcast: Beyond the Grid</span>
+            <a href="/podcasts" className="hover:text-primary transition-colors">Podcast: Beyond the Grid</a>
             <span className="mx-2">/</span>
             <span className="text-foreground">James Feasey, Edged Infrastructure</span>
           </nav>
@@ -41,7 +41,7 @@ const Index = () => {
         </div>
 
         {/* Stream Badges */}
-        <div id="stream-badges" className="mb-8">
+        <div className="mb-8">
           <StreamBadges />
         </div>
 
@@ -77,7 +77,7 @@ const Index = () => {
         {/* Transcript with sidebar nav */}
         <div id="transcript-area" className="grid grid-cols-1 lg:grid-cols-[200px_1fr] gap-6 items-start pb-20">
           <nav className="lg:sticky lg:top-20 flex flex-row lg:flex-col gap-4">
-            <a href="#stream-badges" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Stream</a>
+            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest text-left">Stream</button>
             <a href="#watch-now" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Watch Now</a>
             <div className="border-t border-border my-2" />
             <a href="#intro" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Intro</a>
