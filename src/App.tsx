@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import SimpleVersion from "./pages/SimpleVersion.tsx";
 import Episode3 from "./pages/Episode3.tsx";
 import Episode4 from "./pages/Episode4.tsx";
+import Podcasts from "./pages/Podcasts.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -25,6 +26,7 @@ const App = () => (
           
           <Route path="/episode-3" element={<Episode3 />} />
           <Route path="/episode-4" element={<Episode4 />} />
+          <Route path="/podcasts" element={<Podcasts />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
