@@ -43,7 +43,7 @@ const Episode4 = () => {
         <div className="flex flex-col lg:flex-row items-start gap-6">
           <aside className="hidden lg:block w-[200px] shrink-0 self-start sticky top-[160px]">
             <nav className="flex flex-col gap-4">
-              <a href="#stream-badges" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Stream</a>
+              <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest text-left">Stream</button>
               <a href="#watch-now" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Watch Now</a>
               <div className="border-t border-border my-2" />
               <a href="#intro" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest">Intro</a>
