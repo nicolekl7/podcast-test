@@ -8,6 +8,7 @@ import SimpleVersion from "./pages/SimpleVersion.tsx";
 import Episode3 from "./pages/Episode3.tsx";
 import Episode4 from "./pages/Episode4.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import ScrollToTop from "./components/ScrollToTop.tsx";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<SimpleVersion />} />
           <Route path="/episode-5-v2" element={<SimpleVersion />} />
