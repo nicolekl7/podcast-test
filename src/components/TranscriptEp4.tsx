@@ -2,7 +2,7 @@ const TranscriptEp4 = () => {
   return (
     <div className="space-y-10">
       {/* INTRO */}
-      <section id="intro" className="scroll-mt-[156px]">
+      <section id="intro" className="scroll-mt-[166px]">
         <div className="space-y-5 text-foreground/85 leading-relaxed text-base">
           <p>
             <strong className="text-foreground">Beth Rattner:</strong> Hi everyone. Welcome to Beyond the Grid. This is a special in-person episode. We are here with Wes Short, who is the Senior Director of Infrastructure Projects. We are live in Austin, Texas. This is the barbecue edition of Beyond the Grid. We are talking to Wes because if you ask who the MacGyver of our company is, the answer is always Wes. What I appreciate most about him is that he sees the whole picture. He's not just trying to make things a little bit incrementally more efficient. He's really trying to solve the whole problem at once. So with that, please welcome our special guest, Wes.
@@ -68,7 +68,7 @@ const TranscriptEp4 = () => {
       <hr className="border-border" />
 
       {/* MAIN */}
-      <section id="main" className="scroll-mt-[156px]">
+      <section id="main" className="scroll-mt-[166px]">
         <div className="space-y-5 text-foreground/85 leading-relaxed text-base">
           <p>
             <strong className="text-foreground">Beth Rattner:</strong> At Endeavour, making the impossible possible—I think that's our new sub tagline. I think the very first question I asked you when I started was, what keeps you up at night about this work? And your answer was grid stability. Maybe we can talk about what grid stability is to you, why are you worried about it, and how does it work?
@@ -213,7 +213,7 @@ const TranscriptEp4 = () => {
       <hr className="border-border" />
 
       {/* Takeaways */}
-      <section id="tldr" className="scroll-mt-[156px]">
+      <section id="tldr" className="scroll-mt-[166px]">
         <h2 className="text-xl font-bold text-foreground mb-5 tracking-wide">Takeaways</h2>
         <ul className="space-y-5 text-foreground/85 leading-relaxed text-base list-none">
           <li className="pl-4 border-l-[3px] border-primary">

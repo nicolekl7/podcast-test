@@ -2,7 +2,7 @@ const TranscriptSimple = () => {
   return (
     <div className="space-y-10">
       {/* INTRO */}
-      <section id="intro" className="scroll-mt-[156px]">
+      <section id="intro" className="scroll-mt-[166px]">
         <div className="space-y-5 text-foreground/85 leading-relaxed text-base">
           <p>
             <strong className="text-foreground">Beth Rattner:</strong> Hi everyone. Welcome to Beyond the Grid. We are here live in person with James Feasey today. Every company needs a suave British guy who can rescue people with a ballpoint pen.
@@ -38,7 +38,7 @@ const TranscriptSimple = () => {
       </section>
 
       {/* MAIN CONVERSATION */}
-      <section id="main-conversation" className="scroll-mt-[156px]">
+      <section id="main-conversation" className="scroll-mt-[166px]">
         <div className="space-y-5 text-foreground/85 leading-relaxed text-base">
           <p>
             <strong className="text-foreground">Beth Rattner:</strong> Even before you were in tech, you were in Special Forces. What was your job?
@@ -123,7 +123,7 @@ const TranscriptSimple = () => {
       <hr className="border-border" />
 
       {/* TAKEAWAYS */}
-      <section id="takeaways" className="scroll-mt-[156px]">
+      <section id="takeaways" className="scroll-mt-[166px]">
         <h2 className="text-xl font-bold text-foreground mb-5 tracking-wide">Takeaways</h2>
         <ul className="space-y-5 text-foreground/85 leading-relaxed text-base list-none">
           <li className="pl-4 border-l-[3px] border-primary">

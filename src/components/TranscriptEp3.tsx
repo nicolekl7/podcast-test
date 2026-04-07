@@ -2,7 +2,7 @@ const TranscriptEp3 = () => {
   return (
     <div className="space-y-10">
       {/* INTRO */}
-      <section id="intro" className="scroll-mt-[220px]">
+      <section id="intro" className="scroll-mt-[230px]">
         <div className="space-y-5 text-foreground/85 leading-relaxed text-base">
           <p>
             <strong className="text-foreground">Beth Rattner:</strong> Hi, everybody. Welcome to the podcast. This is Beyond the Grid. I'm Beth Rattner, I'm your host. Thank you so much for tuning in today. We have a very intelligent episode. For those of you who don't know me, I lead the impact team here at Endeavour, and we really do focus on sustainability.
@@ -38,7 +38,7 @@ const TranscriptEp3 = () => {
       </section>
 
       {/* MAIN */}
-      <section id="main-conversation" className="scroll-mt-[220px]">
+      <section id="main-conversation" className="scroll-mt-[230px]">
         <div className="space-y-5 text-foreground/85 leading-relaxed text-base">
           <p>
             <strong className="text-foreground">Beth Rattner:</strong> Let's jump right in here. This concept of digital twins, which is really the same process that we use when we monitor our own biometric devices, or when you're monitoring a data center—that concept's been around for a long time.
@@ -213,7 +213,7 @@ const TranscriptEp3 = () => {
       <hr className="border-border" />
 
       {/* TAKEAWAYS */}
-      <section id="takeaways" className="scroll-mt-[220px]">
+      <section id="takeaways" className="scroll-mt-[230px]">
         <h2 className="text-xl font-bold text-foreground mb-5 tracking-wide">Takeaways</h2>
         <ul className="space-y-5 text-foreground/85 leading-relaxed text-base list-none">
           <li className="pl-4 border-l-[3px] border-primary">

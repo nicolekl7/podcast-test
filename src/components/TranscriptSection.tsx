@@ -2,7 +2,7 @@ const TranscriptSection = () => {
   return (
     <div className="space-y-10">
       {/* INTRO */}
-      <section id="intro" className="scroll-mt-[156px]">
+      <section id="intro" className="scroll-mt-[166px]">
         <div className="space-y-5 text-foreground/85 leading-relaxed text-base">
           <p>
             <strong className="text-foreground">Beth Rattner:</strong> Hi everyone. Welcome to Beyond the Grid. We are here live in person with James Feasey today. Every company needs a suave British guy who can rescue people with a ballpoint pen.
@@ -38,7 +38,7 @@ const TranscriptSection = () => {
       </section>
 
       {/* CUTTING THROUGH THE NOISE */}
-      <section id="cutting-noise" className="scroll-mt-[156px]">
+      <section id="cutting-noise" className="scroll-mt-[166px]">
         <div className="space-y-5 text-foreground/85 leading-relaxed text-base">
           <p>
             <strong className="text-foreground">Beth Rattner:</strong> Even before you were in tech, you were in Special Forces. What was your job?
@@ -63,7 +63,7 @@ const TranscriptSection = () => {
       </section>
 
       {/* THE MULTI-GIGAWATT REALITY */}
-      <section id="multi-gigawatt" className="scroll-mt-[156px]">
+      <section id="multi-gigawatt" className="scroll-mt-[166px]">
         <div className="space-y-5 text-foreground/85 leading-relaxed text-base">
           <p>
             <strong className="text-foreground">Beth Rattner:</strong> We've heard these different projections around 945 terawatts of power being used by 2030. What are your thoughts?
@@ -93,7 +93,7 @@ const TranscriptSection = () => {
       </section>
 
       {/* DESIGNING THE ECOTONE */}
-      <section id="ecotone" className="scroll-mt-[156px]">
+      <section id="ecotone" className="scroll-mt-[166px]">
         <div className="space-y-5 text-foreground/85 leading-relaxed text-base">
           <p>
             <strong className="text-foreground">Beth Rattner:</strong> What's the most enticing use of waste heat that you can think of?
@@ -117,7 +117,7 @@ const TranscriptSection = () => {
       </section>
 
       {/* BREAKING THE COPPER CEILING */}
-      <section id="copper-ceiling" className="scroll-mt-[156px]">
+      <section id="copper-ceiling" className="scroll-mt-[166px]">
         <div className="space-y-5 text-foreground/85 leading-relaxed text-base">
           <p>
             <strong className="text-foreground">Beth Rattner:</strong> What's a leapfrog technology that you think right now might be a little bit in the science fiction category, but will probably show up as real?
@@ -141,7 +141,7 @@ const TranscriptSection = () => {
       <hr className="border-border" />
 
       {/* THE TL;DR */}
-      <section id="tldr" className="scroll-mt-[156px]">
+      <section id="tldr" className="scroll-mt-[166px]">
         <h2 className="text-xl font-bold text-foreground mb-5 tracking-wide">Takeaways</h2>
         <ul className="space-y-5 text-foreground/85 leading-relaxed text-base list-none">
           <li className="pl-4 border-l-[3px] border-primary">
